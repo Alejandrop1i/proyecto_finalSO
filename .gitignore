@@ -1,0 +1,13 @@
+# binarios y objetos
+logpulse
+loggen
+logpulse_tsan
+*.o
+*.exe
+
+# logs de prueba y resultados
+*.log
+*.log.1
+*.csv
+resultados/
+prueba_*.log
