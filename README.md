@@ -5,12 +5,15 @@ Tecnología en Sistematización de Datos, Universidad Distrital Francisco José 
 
 ## Integrantes
 
-| Integrante | Responsabilidad |
-|---|---|
-| Oscar Iván Ramírez | Fase 1: `loggen`, parseador, métricas, búfer acotado, hilos, `Makefile` |
-| (nombre) | Procesos e IPC: `fork`, memoria compartida, semáforo, tubería, señales |
-| (nombre) | Archivos: `mmap`, comparación con `read`, `inotify`, rotación |
-| (nombre) | Entrada/salida: panel ncurses, teclas, CSV, scripts de medición e informe |
+| Integrante | Parte | Qué hace | Criterios de la rúbrica |
+|---|---|---|---|
+| (nombre) | Fase 1 (roles 1 y 2 del enunciado) | `loggen`, parseador, métricas, búfer acotado, hilos parseadores, terminación ordenada, `Makefile`, scripts de prueba y medición | Revisión de avance, Hilos y sincronización |
+| (nombre) | Procesos e IPC (rol 3) | `fork` por archivo, memoria compartida con `shm_open` y semáforo, tubería de estado, `SIGCHLD`, detección de trabajador caído | Procesos y comunicación |
+| (nombre) | Archivos (primera mitad del rol 4) | `mmap` en modo lote, comparación contra `read` con tiempo y fallos de página, `inotify`, rotación, modo vivo | Memoria, Archivos |
+| (nombre) | Interfaz e informe (segunda mitad del rol 4) | Panel ncurses, teclas `q` `p` `e`, exportación CSV, cierre limpio de terminal, armado del informe técnico en PDF | Entrada/salida y señales, Informe técnico |
+
+La funcionalidad del núcleo es responsabilidad de todos: se cumple cuando las cuatro partes
+funcionan juntas en la sustentación.
 
 El detalle de qué toca a cada uno y por dónde engancha cada módulo está en
 [docs/arquitectura.md](docs/arquitectura.md) y [docs/guia_companeros.md](docs/guia_companeros.md).
